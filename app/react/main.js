@@ -4,61 +4,51 @@ import Router from "react-router";
 
 // import App from "App.js";
 
-var App = require("./App.js");
+var App = require("./App.js"),
+    NotFound = require("./pages/utils/NotFound.jsx"),
+    Home = require("./pages/Home.jsx");
 
 // window.React = React;
-
-/*console.log("in main.js");
-
-React.render(<App/>, document.getElementById("main"));
-*/
-
-console.log("in mian.js");
 
 const pages = [
     {
         name: "Home",
-        route: "/home"
+        route: "/home",
+        page: Home
     },
     {
         name: "Updates",
-        route: "/updates"
+        route: "/updates",
+        page: require("./pages/Updates.jsx")
     },
     {
         name: "About",
-        route: "/about"
+        route: "/about",
+        page: require("./pages/About.jsx")
     },
     {
         name: "Get Involved",
-        route: "/involved"
+        route: "/involved",
+        page: require("./pages/Involved.jsx")
     },
     {
         name: "Sponsors",
-        route: "/sponsors"
+        route: "/sponsors",
+        page: require("./pages/Sponsors.jsx")
     },
     [
         {
             name: "Sign In",
-            route: "/members/sign_in"
+            route: "/sign_in",
+            page: require("./pages/members/SignIn.jsx")
         },
         {
             name: "Calendar",
-            route: "/members/calendar"
+            route: "/calendar",
+            page: require("./pages/members/Calendar.jsx")
         }
     ]
 ];
-
-class Home extends React.Component {
-    render() {
-        return <h2>Home</h2>;
-    }
-}
-
-class About extends React.Component {
-    render() {
-        return <h2>About</h2>;
-    }
-}
 
 class AppWrapper extends React.Component { 
     render() {
@@ -68,15 +58,22 @@ class AppWrapper extends React.Component {
     }
 }
 
-var Route = Router.Route;
+var Route = Router.Route,
+    DefaultRoute = Router.DefaultRoute,
+    NotFoundRoute = Router.NotFoundRoute;
 
-var DefaultRoute = Router.DefaultRoute;
+var innerRoutes = pages.slice(0, -1).map((val, i) => {
+    return <Route path={val.route} handler={val.page} name={val.name} />
+}).concat(pages[pages.length - 1].map((val, i) => {
+    return <Route path={"/members/" + val.route} handler={val.page} name={val.name} />
+}));
+
 
 var routes = (
     <Route handler={AppWrapper}>
-        <Route path="/home" handler={Home} />
-        <Route path="/about" handler={About} />
+        { innerRoutes }
         <DefaultRoute handler={Home} />
+        <NotFoundRoute handler={NotFound} />
     </Route>
 );
 

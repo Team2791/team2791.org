@@ -19,7 +19,6 @@ class App extends React.Component {
         return (
             <div id="main" className="container">
                 <TeamNav navTabs={this.props.pages} />
-                <h1>App</h1>
                 <RouteHandler />
             </div>
         );
