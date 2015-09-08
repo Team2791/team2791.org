@@ -34,7 +34,7 @@ class TeamNav extends React.Component {
                 });
 
         return (
-            <Navbar fixedTop inverse brand="Team 2791" toggleNavKey={0}>
+            <Navbar fixedTop inverse brand="2791" toggleNavKey={0}>
                 <Nav id="topNav" eventKey={0}>
                     { navItems }
                     <DropdownButton className="membersButton" bsStyle="primary" eventKey={2} title="Members">
