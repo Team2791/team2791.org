@@ -3,7 +3,13 @@ import React from "react";
 class Involved extends React.Component {
 
     render() {
-        return <h2>Get Involved</h2>;
+        return (
+            <div className="container">
+                <div className="page-header">
+                    <h2>Involved</h2>
+                </div>
+            </div>
+        );
     }
 }
 

@@ -5,6 +5,7 @@
     "webpack": "^1.11.0"
   },
   "dependencies": {
+    "marked": "^0.3.5",
     "react": "^0.13.3",
     "react-bootstrap": "^0.24.5",
     "react-router": "^0.13.3",

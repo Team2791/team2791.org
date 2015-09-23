@@ -120,3 +120,32 @@ nav .container {
     top: 0;
     right: 0;
 }
+
+/*.home-third {
+    width: 33.333333%;
+}
+
+.home-third > * {
+    width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+.home-thumb {
+    width: 100%;
+    height: auto;
+}
+
+.home-third h3 {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.updates {
+    margin-top: 5%;
+}
+
+.updates a h2 {
+    color:black;
+}

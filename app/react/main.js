@@ -39,12 +39,12 @@ const pages = [
     [
         {
             name: "Sign In",
-            route: "/sign_in",
+            route: "sign_in",
             page: require("./pages/members/SignIn.jsx")
         },
         {
             name: "Calendar",
-            route: "/calendar",
+            route: "calendar",
             page: require("./pages/members/Calendar.jsx")
         }
     ]

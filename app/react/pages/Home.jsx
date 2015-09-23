@@ -2,6 +2,8 @@ import React from "react";
 
 import {Jumbotron} from "react-bootstrap";
 
+var UpdatesList = require("../content/UpdatesList.jsx");
+
 class Home extends React.Component {
 
     render() {
@@ -17,19 +19,26 @@ class Home extends React.Component {
                     <div className="row">
                         <div className="col-md-9 col-sm-12 col-xs-12">
                             <div className="row">
-                                <div className="col-md-4 col-sm-4 col-xs-4">
-                                    hai1
+                                <div className="col-md-4 col-sm-4 col-xs-4 home-third">
+                                    <a href="/about"><img src="/img/lunk.jpg" className="img-circle home-thumb" />
+                                    <h3>About Us</h3></a>
                                 </div>
-                                <div className="col-md-4 col-sm-4 col-xs-4">
-                                    hai2
+                                <div className="col-md-4 col-sm-4 col-xs-4 home-third">
+                                    <a href="/involved"><img src="/img/involved.jpg" className="img-circle home-thumb" />
+                                    <h3>Get Involved</h3></a>
                                 </div>
-                                <div className="col-md-4 col-sm-4 col-xs-4">
-                                    hai3
+                                <div className="col-md-4 col-sm-4 col-xs-4 home-third">
+                                    <a href="/sponsors"><img src="/img/sponsorsShirt.jpg" className="img-circle home-thumb" />
+                                    <h3>Sponsors</h3></a>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-md-8 col-md-offset-2">
-                                    SPONSORS
+                            <div className="row updates">
+                                <div className="col-md-12">
+                                    <a href="/updates"><h2>Updates</h2></a>
+                                    <div className="row">
+                                        <UpdatesList posts={false} />
+                                        <a href="/updates" className="btn btn-default">Read more...</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
