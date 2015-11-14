@@ -1,3 +1,4 @@
 node_modules
 bundle.js
 resources
+.DS_Store
