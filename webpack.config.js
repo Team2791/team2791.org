@@ -1,9 +1,9 @@
 var webpack = require("webpack");
 
 module.exports = {
-    entry: "./app/react/main.js",
+    entry: "./webroot/react/main.js",
     output: {
-        path: "./app/build",
+        path: "./webroot/build",
         filename: "bundle.js"
     },
     module: {
