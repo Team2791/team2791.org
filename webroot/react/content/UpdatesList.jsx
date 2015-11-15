@@ -85,7 +85,7 @@ Last year was our first time going for the Chairman’s award, and we went away 
             });
         }
         return (
-            <div className={"posts-container " + (this.props.full ? "col-md-9" : "col-md-12")}>
+            <div className={"posts-container " + (this.props.full ? "col-md-9" : "col-md-9")}>
                 {posts}
             </div>
         )

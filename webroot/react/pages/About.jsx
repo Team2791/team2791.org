@@ -151,9 +151,6 @@ class About extends React.Component {
                                         </CarouselItem>
                                     </Carousel>
                                 </div>
-                                <div className="timeline-footer">
-                                    <p className="text-right">stuff?</p>
-                                </div>
                             </div>
                         </li>
 
@@ -166,13 +163,152 @@ class About extends React.Component {
                                     <h4>2014 Season</h4>
                                 </div>
                                 <div className="timeline-body">
-                                    <p>Finger Lakes Quality Award Winner</p>
-                                </div>
-                                <div className="timeline-footer">
-                                    <p className="text-right">stuff?</p>
-                                </div>
+                                    <Carousel>
+                                        <CarouselItem>
+                                            <img className="timeline-image" src="/img/past_years/2014/cheering1.jpg" />
+                                            <div className="carousel-caption">
+                                                <p>Finger Lakes Quality Award Winner</p>
+                                            </div>
+                                        </CarouselItem>
+                                        <CarouselItem>
+                                            <img className="timeline-image" src="/img/past_years/2014/dance1.jpg" />
+                                        </CarouselItem>
+                                    </Carousel>
+                                </div>0
                             </div>
                         </li>
+
+                        <li>
+                            <div className="timeline-badge">
+                                <a><i className="fa fa-circle invert" id=""></i></a>
+                            </div>
+                            <div className="timeline-panel">
+                                <div className="timeline-heading">
+                                    <h4>2013 Season</h4>
+                                </div>
+                                <div className="timeline-body">
+                                    <Carousel>
+                                        <CarouselItem>
+                                            <img className="timeline-image" src="/img/past_years/2013/beantown2.jpg" />
+                                            <div className="carousel-caption">
+                                                <p>Beantown Blitz Finalists</p>
+                                            </div>
+                                        </CarouselItem>
+                                        <CarouselItem>
+                                            <img className="timeline-image" src="/img/past_years/2013/wpi_regional.jpg" />
+                                            <div className="carousel-caption">
+                                                <p>WPI Regional Finalist - #1 seed</p>
+                                            </div>
+                                        </CarouselItem>
+                                        <CarouselItem>
+                                            <img className="timeline-image" src="/img/past_years/2013/wpi2.jpg" />
+                                            <div className="carousel-caption">
+                                                <p>WPI Regional Quality Award Winner</p>
+                                            </div>
+                                        </CarouselItem>
+                                        <CarouselItem>
+                                            <img className="timeline-image" src="/img/past_years/2013/bae1.jpg" />
+                                            <div className="carousel-caption">
+                                                <p>BAE Granite State Regional Quarterfinalist</p>
+                                            </div>
+                                        </CarouselItem>
+                                        <CarouselItem>
+                                            <img className="timeline-image" src="/img/past_years/2013/bae2.jpg" />
+                                            <div className="carousel-caption">
+                                                <p>BAE Granite State Regional Engineering Excellence Award (Sponsored by Delphi)</p>
+                                            </div>
+                                        </CarouselItem>
+                                    </Carousel>
+                                </div>0
+                            </div>
+                        </li>
+                        <li className="timeline-inverted">
+                            <div className="timeline-badge">
+                                <a><i className="fa fa-circle invert" id=""></i></a>
+                            </div>
+                            <div className="timeline-panel">
+                                <div className="timeline-heading">
+                                    <h4>2012 Season</h4>
+                                </div>
+                                <div className="timeline-body">
+                                    <ul>
+                                        <li>BAE Granite State Regional Finalist</li>
+                                        <li>BAE Granite State Regional Imagery Award</li>
+                                        <li>Winner (for outstanding aesthetic integration of machine design and team appearance)</li>
+                                        <li>Northeast Utilities CT Regional Semifinalist</li>
+                                        <li>Northeast Utilities CT Regional Creativity Award</li>
+                                        <li>Winner (for our innovative drivetrain design)</li>
+                                    </ul>
+                                </div>0
+                            </div>
+                        </li>
+                        <li>
+                            <div className="timeline-badge">
+                                <a><i className="fa fa-circle invert" id=""></i></a>
+                            </div>
+                            <div className="timeline-panel">
+                                <div className="timeline-heading">
+                                    <h4>2011 Season</h4>
+                                </div>
+                                <div className="timeline-body">
+                                    <ul>
+                                        <li>Battlecry@WPI Judges Award</li>
+                                        <li>Ramp Riot Competition Winner</li>
+                                    </ul>
+                                </div>0
+                            </div>
+                        </li>
+                        <li className="timeline-inverted">
+                            <div className="timeline-badge">
+                                <a><i className="fa fa-circle invert" id=""></i></a>
+                            </div>
+                            <div className="timeline-panel">
+                                <div className="timeline-heading">
+                                    <h4>2010 Season</h4>
+                                </div>
+                                <div className="timeline-body">
+                                    <ul>
+                                        <li>WPI Regional Judge’s Award</li>
+                                        <li>WPI Regional Website Award</li>
+                                        <li>WPI Regional Quarterfinalist</li>
+                                        <li>Northeast Utilities CT Regional Semifinalist</li>
+                                    </ul>
+                                </div>0
+                            </div>
+                        </li>
+                        <li>
+                            <div className="timeline-badge">
+                                <a><i className="fa fa-circle invert" id=""></i></a>
+                            </div>
+                            <div className="timeline-panel">
+                                <div className="timeline-heading">
+                                    <h4>2009 Season</h4>
+                                </div>
+                                <div className="timeline-body">
+                                    <ul>
+                                        <li>Finger Lakes Rookie All Star Winner</li>
+                                        <li>FRC Championship Participant</li>
+                                        <li>Ramp Riot Competition Winner</li>
+                                    </ul>
+                                </div>0
+                            </div>
+                        </li>
+                        <li className="timeline-inverted">
+                            <div className="timeline-badge">
+                                <a><i className="fa fa-circle invert" id=""></i></a>
+                            </div>
+                            <div className="timeline-panel">
+                                <div className="timeline-heading">
+                                    <h4>2008 Season</h4>
+                                </div>
+                                <div className="timeline-body">
+                                    <ul>
+                                        <li>Pascack Pandamonium Winner</li>
+                                    </ul>
+                                </div>0
+                            </div>
+                        </li>
+
                         <li className="clearfix no-float"></li>
                     </ul>
                 </div></div>)
