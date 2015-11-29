@@ -174,7 +174,7 @@ class About extends React.Component {
                                             <img className="timeline-image" src="/img/past_years/2014/dance1.jpg" />
                                         </CarouselItem>
                                     </Carousel>
-                                </div>0
+                                </div>
                             </div>
                         </li>
 
@@ -219,7 +219,7 @@ class About extends React.Component {
                                             </div>
                                         </CarouselItem>
                                     </Carousel>
-                                </div>0
+                                </div>
                             </div>
                         </li>
                         <li className="timeline-inverted">
@@ -239,7 +239,7 @@ class About extends React.Component {
                                         <li>Northeast Utilities CT Regional Creativity Award</li>
                                         <li>Winner (for our innovative drivetrain design)</li>
                                     </ul>
-                                </div>0
+                                </div>
                             </div>
                         </li>
                         <li>
@@ -255,7 +255,7 @@ class About extends React.Component {
                                         <li>Battlecry@WPI Judges Award</li>
                                         <li>Ramp Riot Competition Winner</li>
                                     </ul>
-                                </div>0
+                                </div>
                             </div>
                         </li>
                         <li className="timeline-inverted">
@@ -273,7 +273,7 @@ class About extends React.Component {
                                         <li>WPI Regional Quarterfinalist</li>
                                         <li>Northeast Utilities CT Regional Semifinalist</li>
                                     </ul>
-                                </div>0
+                                </div>
                             </div>
                         </li>
                         <li>
@@ -290,7 +290,7 @@ class About extends React.Component {
                                         <li>FRC Championship Participant</li>
                                         <li>Ramp Riot Competition Winner</li>
                                     </ul>
-                                </div>0
+                                </div>
                             </div>
                         </li>
                         <li className="timeline-inverted">
@@ -305,7 +305,7 @@ class About extends React.Component {
                                     <ul>
                                         <li>Pascack Pandamonium Winner</li>
                                     </ul>
-                                </div>0
+                                </div>
                             </div>
                         </li>
 
