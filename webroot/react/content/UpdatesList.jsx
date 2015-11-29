@@ -1,5 +1,6 @@
 import React from "react";
 import marked from "marked";
+import {ButtonLink} from "react-router-bootstrap";
 
 var numToMonth = [
     "January",
@@ -69,6 +70,12 @@ Last year was our first time going for the Chairman’s award, and we went away 
                     </div>
                 );
             });
+            return (
+                <div className={"posts-container " + (this.props.full ? "col-md-12" : "col-md-9")}>
+                    {posts}                
+                    <ButtonLink to="/updates">Read more...</ButtonLink>
+                </div>
+            );
         }
         else {
             posts = this.state.posts.slice(0, 3).map((val, i) => {
@@ -83,12 +90,13 @@ Last year was our first time going for the Chairman’s award, and we went away 
                     </div>
                 );
             });
+            return (
+                <div className={"posts-container " + (this.props.full ? "col-md-12" : "col-md-9")}>
+                    {posts}                
+                </div>
+            );
         }
-        return (
-            <div className={"posts-container " + (this.props.full ? "col-md-9" : "col-md-9")}>
-                {posts}
-            </div>
-        )
+        
     }
 }
 

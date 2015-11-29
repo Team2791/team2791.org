@@ -1,5 +1,9 @@
 var webpack = require("webpack");
 
+var envVar = new webpack.DefinePlugin({
+    __PROJECTID__: process.env.CAL_KEY
+})
+
 module.exports = {
     entry: "./webroot/react/main.js",
     output: {
@@ -17,5 +21,6 @@ module.exports = {
     },
     resolve: {
         extensions: ["", ".js", ".jsx"]
-    }
+    },
+    plugins: [envVar]
 };

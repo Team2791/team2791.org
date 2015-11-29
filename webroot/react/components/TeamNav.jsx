@@ -20,7 +20,7 @@ class TeamNav extends React.Component {
 
     render() {
         // TODO: implement https://github.com/react-bootstrap/react-router-bootstrap
-
+        // console.log(window.location.href);
         /*
             will be NavItemLink with "to": 
             and MenuItemLink with "to":
@@ -32,9 +32,9 @@ class TeamNav extends React.Component {
             members = last.map((val, i) => {
                 return <MenuItemLink to={ "/members/" + val.route } eventKey={i.toString()}>{ val.name }</MenuItemLink>;
             });
-
+        let f = window.location.href.split("/");
         return (
-            <Navbar fixedTop inverse brand="2791" toggleNavKey={0}>
+            <Navbar fixedTop inverse brand={f[f.length - 1] === "home" ? "FIRST Robotics Team 2791" : "Team 2791"} toggleNavKey={0}>
                 <Nav id="topNav" eventKey={0}>
                     { navItems }
                     <DropdownButton className="membersButton" bsStyle="primary" eventKey={2} title="Members">

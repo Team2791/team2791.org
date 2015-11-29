@@ -5,6 +5,7 @@ class SocialFooter extends React.Component {
     render() {
         return (
             <div className="row" id="socialFooter">
+                &copy; 2015 FIRST Team 2791 Shaker Robotics
                 <div className="col-md-6 col-md-offset-3">
                     <ul className="social">
                         <li className="facebook"><a href="https://www.facebook.com/Team2791"><i className="fa fa-facebook fa-3x"></i></a></li>

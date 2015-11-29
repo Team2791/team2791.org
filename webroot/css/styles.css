@@ -30,7 +30,34 @@ nav .container {
 #homeJumbo {
     position: relative;
     background-color: #4791FF;
+    padding: 2.5em 0;
+    color: white;
     /*z-index: -1;*/
+}
+
+#homeJumbo h1 {
+    font-size: 5rem;
+}
+
+#homeJumbo li {
+    font-size: 1.7rem;
+}
+
+#homeJumbo ul {
+    list-style-type: square;
+}
+
+#blueButton:hover {
+    background: white;
+}
+
+#blueSombrero {
+    height: 5rem;
+    width: auto;
+}
+
+#threePics {
+    margin-top: 3rem; 
 }
 
 /*
@@ -144,7 +171,7 @@ nav .container {
 }
 
 .updates {
-    margin-top: 5%;
+    margin-top: 3rem;
 }
 
 .updates a h2 {

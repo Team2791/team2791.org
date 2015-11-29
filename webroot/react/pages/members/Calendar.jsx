@@ -21,7 +21,11 @@ class Calendar extends React.Component {
         console.log("compdidmount");
         let context = this;
         $("#calendar").fullCalendar({
-            events: [
+            googleCalendarApiKey: "AIzaSyA5FhvdC2hZFRRErYgYtodjR05Fu-20IcM",
+            events: {
+                googleCalendarId: "7gqq17h6lluk8js57lk98cgu7c@group.calendar.google.com"
+            },
+            /*events: [
                 {
                     title: "Robotics Banquet",
                     start: "2015-05-21T18:00:00",
@@ -43,7 +47,7 @@ class Calendar extends React.Component {
                     allDay: false,
                     description: "We will go over requirements for the season. One parent/guardian and the robotics participant must attend. If you can't attend, let Mr.Ashline know ASAP."
                 }
-            ],
+            ],*/
             header: {
                 left: "prev,next today",
                 center: "title",
