@@ -47,7 +47,7 @@ class Home extends React.Component {
                             
                             <button id="blueButton" className="btn btn-default btn-lg" type="button">
                                 <a href="http://sports.bluesombrero.com/default.aspx?portalid=7342">Blue Sombrero Log In</a>
-                                <img id="blueSombrero" src="http://www.ci.reynoldsburg.oh.us/Uploads/Images/BlueSombreroLogo-hat-big.jpg" />
+                                <img id="blueSombrero" src="/img/blueSombrero.jpg" />
                             </button>
                         </div>
                     </div>

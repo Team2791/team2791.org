@@ -19,7 +19,7 @@ class CalendarEvents extends React.Component {
 
         // __PROJECTID__ 
         let api_key = "AIzaSyA5FhvdC2hZFRRErYgYtodjR05Fu-20IcM",
-            cal_id = "7gqq17h6lluk8js57lk98cgu7c@group.calendar.google.com",
+            cal_id = "obbkpl18stek7tvntrs49pieio@group.calendar.google.com",
             context = this;
         $.ajax({
             type: "GET",

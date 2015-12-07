@@ -23,7 +23,7 @@ class Calendar extends React.Component {
         $("#calendar").fullCalendar({
             googleCalendarApiKey: "AIzaSyA5FhvdC2hZFRRErYgYtodjR05Fu-20IcM",
             events: {
-                googleCalendarId: "7gqq17h6lluk8js57lk98cgu7c@group.calendar.google.com"
+                googleCalendarId: "obbkpl18stek7tvntrs49pieio@group.calendar.google.com"
             },
             /*events: [
                 {
