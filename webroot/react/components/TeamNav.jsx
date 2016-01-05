@@ -33,8 +33,9 @@ class TeamNav extends React.Component {
                 return <MenuItemLink to={ "/members/" + val.route } eventKey={i.toString()}>{ val.name }</MenuItemLink>;
             });
         let f = window.location.href.split("/");
+        // console.log(f[f.length - 1]);
         return (
-            <Navbar fixedTop inverse brand={f[f.length - 1] === "home" ? "FIRST Robotics Team 2791" : "Team 2791"} toggleNavKey={0}>
+            <Navbar fixedTop inverse brand={(f[f.length - 1] === "home" || f[f.length - 1] === "") ? "FIRST Robotics Team 2791" : "Team 2791"} toggleNavKey={0}>
                 <Nav id="topNav" eventKey={0}>
                     { navItems }
                     <DropdownButton className="membersButton" bsStyle="primary" eventKey={2} title="Members">
